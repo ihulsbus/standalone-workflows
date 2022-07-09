@@ -15,8 +15,6 @@ USER lavalink
 
 RUN wget "https://github.com/freyacodes/Lavalink/releases/download/${LAVALINK_VERSION}/Lavalink.jar" -P /opt/Lavalink
 
-COPY Lavalink.jar Lavalink.jar
-
 EXPOSE 2333
 
 CMD ["java", "-Djdk.tls.client.protocols=TLSv1.1,TLSv1.2", "-Xmx4G", "-jar", "Lavalink.jar"]
